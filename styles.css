@@ -1,0 +1,200 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ECDFCC; /* Light beige background */
+    color: #181C14; /* Dark greenish color for text */
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+#headerGif {
+    width: auto;
+    height: 200px; /* Adjust height as needed */
+    display: block;
+    margin: 0 auto;
+}
+
+.header-bar {
+    position: absolute;
+    top: 200px; /* Adjust top position as needed */
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 15px #3C3D37; /* Glow effect */
+    animation: slideIn 0.5s forwards, pulse 1.5s infinite ease-in-out;
+    z-index: 2; /* Ensure it’s above other content */
+}
+
+@keyframes slideIn {
+    from {
+        top: -80px; /* Off-screen position */
+    }
+    to {
+        top: 10px; /* Final position */
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 15px #3C3D37;
+    }
+    50% {
+        box-shadow: 0 0 25px #3C3D37;
+    }
+    100% {
+        box-shadow: 0 0 15px #3C3D37;
+    }
+}
+
+.header-bar:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-link {
+    display: block;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+}
+
+.icon {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover {
+    transform: rotate(360deg) scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.cat-photo {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border: 2px solid #3C3D37; /* Dark olive green border */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#catImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#foodOverlay {
+    position: absolute;
+    bottom: 115px;
+    left: -120px;
+    width: 80%;
+    height: auto;
+    pointer-events: none;
+}
+
+.food-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.food-options button {
+    background-color: #697565; /* Muted green */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #ECDFCC; /* Light beige text color */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-options button:hover {
+    background-color: #3C3D37; /* Dark olive green on hover */
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #3C3D37; /* Dark olive green */
+    color: #ECDFCC; /* Light beige text color */
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #697565; /* Muted green border */
+}
+
+.photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.side-images {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.side-images.left {
+    left: -150px;
+}
+
+.side-images.right {
+    right: -150px;
+}
+
+.side-image {
+    width: 60px; /* or adjust as needed */
+    height: auto; /* or adjust as needed */
+    position: absolute;
+}
+
+.intro-text {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.intro-text h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #3C3D37; /* Dark olive green */
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #697565; /* Muted green */
+    margin: 0;
+}

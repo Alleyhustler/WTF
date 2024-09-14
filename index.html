@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed the Cat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+</head>
+<body>
+    <header>
+        <img src="images/WHEREsTHEFOOD-ezgif.com-crop.gif" alt="Feed the Cat!" id="headerGif">
+        <div class="header-bar">
+            <div class="icon-container">
+                <a href="https://x.com/Wtf_solana_" target="_blank" class="icon-link">
+                    <img src="images/twitter.png" alt="Twitter" class="icon">
+                </a>
+                <a href="https://t.me/+bUtzmjYYUdMyOGFk" target="_blank" class="icon-link">
+                    <img src="images/telegram.png" alt="Telegram" class="icon">
+                </a>
+                <a href="https://pump.fun/board" target="_blank" class="icon-link">
+                    <img src="images/pumpfun.png" alt="Pumpfun" class="icon">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="photo-container">
+            <div class="side-images left">
+                <img src="images/image-removebg-preview (6).png" alt="Food 4" class="side-image image1">
+                <img src="images/food5.png" alt="Food 5" class="side-image image2">
+                <img src="images/food6.png" alt="Food 6" class="side-image image3">
+            </div>
+            <div class="cat-photo">
+                <img id="catImage" src="images/9b9c7adafe1024e713ae8d6a38fd98c6.jpg" alt="Cat waiting for food">
+                <div id="foodOverlay"></div>
+            </div>
+            <div class="side-images right">
+                <img src="images/food7.png" alt="Food 7" class="side-image image4">
+                <img src="images/food8.png" alt="Food 8" class="side-image image5">
+            </div>
+        </section>
+        <section class="intro-text">
+            <h1>FEED THE CAT WTF!</h1>
+            <p>where's the food, $WTF</p>
+        </section>
+        <section class="food-options">
+            <button onclick="addFood('images/steak.png')">🥩 Steak</button>
+            <button onclick="addFood('images/fish.png')">🐟 Fish</button>
+            <button onclick="addFood('images/chicken.png')">🍗 Chicken</button>
+            <button onclick="addFood('images/tuna.png')">🐟 Tuna</button>
+            <button onclick="addFood('images/lamb.png')">🍖 Lamb</button>
+            <button onclick="addFood('images/cheese.png')">🧀 Cheese</button>
+            <button onclick="addFood('images/egg.png')">🥚 Egg</button>
+            <button onclick="addFood('images/sardine.png')">🐟 Sardine</button>
+
+        </section>
+    </main>   
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
